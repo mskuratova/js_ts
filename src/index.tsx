@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {value1} from "./1/1";
+
+let a=value1
 
 ReactDOM.render(
   <React.StrictMode>

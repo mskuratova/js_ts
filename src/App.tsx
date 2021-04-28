@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const names = ["Aa", "Bb", "Cc"]
+  const names2 = [{name:"A"}, {name:"B"}, {name:"C"}]
+  const liElements = names2.map((n,index) => <li key={index}>{n.name}</li>)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+        {liElements}
+      </ul>
     </div>
   );
 }
