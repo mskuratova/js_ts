@@ -52,7 +52,7 @@ test('big test 1', () => {
 
     expect(user.address.title).toBe('Kanary')
 })
-test('array test', () => {
+test('array test 2', () => {
     const address ={ title:'Omsk'}
 
     const user: UserType = {
@@ -67,7 +67,7 @@ test('array test', () => {
         address: address
     }
 
-    const users = [user, user2, {name: Stas, age: 42, address: address}]
+    const users = [user, user2, {name: 'Stas', age: 42, address: address}]
     const admins =[user, user2]
     admins[0].name = 'Mary'
 
